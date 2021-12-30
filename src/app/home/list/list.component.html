@@ -1,0 +1,20 @@
+<h1>Emp List</h1>
+<button routerLink="/home/create">Add</button>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>DOB</th>
+  </tr>
+  <tr *ngFor="let emp of empDetail">
+    <td>{{ emp["name"] }}</td>
+    <td>{{ emp["age"] }}</td>
+    <td>{{ emp["dob"] ? emp["dob"] : "- - - -" }}</td>
+    <td>
+      <button [routerLink]="'/home/edit/' + emp['id']">Edit</button>
+    </td>
+    <td>
+      <button (click)="deleteDetail(emp['id'])">Delete</button>
+    </td>
+  </tr>
+</table>

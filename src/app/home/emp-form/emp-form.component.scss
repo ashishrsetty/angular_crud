@@ -1,0 +1,29 @@
+div > label {
+  font-weight: bold;
+  padding: 1rem;
+}
+
+div > input {
+  padding: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.submit {
+  background-color: blue;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+
+.cancel {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+button:disabled {
+  opacity: 0.3;
+}
